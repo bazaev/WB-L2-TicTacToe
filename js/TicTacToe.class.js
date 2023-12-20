@@ -63,7 +63,7 @@ class TicTacToe {
 		this.on(this.event.start);
 		// Если первый игрок выбрал ходить вторым
 		// и если второй игрок ИИ, то запускаем его
-		if (!this.#state.side && this.#state.vs > 0) {console.log("AI");
+		if (!this.#state.side && this.#state.vs > 0) {
 			this.#AI();
 		}
 	}
