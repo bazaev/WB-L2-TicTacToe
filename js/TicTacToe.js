@@ -1,4 +1,4 @@
-import XOEngine from "./XO.class.js";
+import XOEngine from "./TicTacToe.class.js";
 import $ from "./elements.js";
 
 class TicTacToe extends XOEngine {
