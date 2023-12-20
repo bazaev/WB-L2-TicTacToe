@@ -11,12 +11,13 @@ class TicTacToe {
 	// Состояние по умолчанию
 	#state = {
 		start: false,
-		player: true,
+		player: false,
 		vs: 0,
 		moves: 0,
 		board: null,
 		winner: null,
 		winCombination: null,
+		side: true
 	};
 
 	// Победные комбинации
@@ -62,7 +63,7 @@ class TicTacToe {
 		this.on(this.event.start);
 		// Если первый игрок выбрал ходить вторым
 		// и если второй игрок ИИ, то запускаем его
-		if (!side && this.#state.vs > 0) {
+		if (!this.#state.side && this.#state.vs > 0) {console.log("AI");
 			this.#AI();
 		}
 	}
