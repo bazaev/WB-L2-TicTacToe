@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="#" />
+	<link rel="stylesheet" href="css/style.css">
+	<script type="module" src="js/main.js"></script>
+	<title>TicTacToe</title>
+</head>
+<body>
+	<div id="panel">
+		<div id="controls">
+			<div class="buttons">
+				<button id="start">Начать</button>
+				<form action="#" id="side" class="select">
+					<label>
+						<input type="radio" name="side" value="0" checked>
+						<span>X</span>
+					</label>
+					<label>
+						<input type="radio" name="side" value="1">
+						<span>O</span>
+					</label>
+				</form>
+				<button id="clear">Сброс</button>
+			</div>
+			<form action="#" id="vs" class="select">
+				<label>
+					<input type="radio" name="vs" value="0" checked>
+					<span>Игрок</span>
+				</label>
+				<label>
+					<input type="radio" name="vs" value="1">
+					<span>ИИ</span>
+				</label>
+				<label>
+					<input type="radio" name="vs" value="2">
+					<span>ИИ+</span>
+				</label>
+				<label>
+					<input type="radio" name="vs" value="3">
+					<span>ИИ++</span>
+				</label>
+			</form>
+		</div>
+	</div>
+	<div id="xo">
+		<div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+		<div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+		<div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+	<div id="info">
+		<span>
+			Ход: <span id="moves">0</span>
+		</span>
+		<span id="winner">
+			Победил игрок: <span id="player"></span>
+		</span>
+	</div>
+</body>
+</html>
