@@ -5,7 +5,7 @@ class TicTacToe extends XOEngine {
 	constructor() {
 		super();
 		// Загружаем состояние
-		const state = this.#loadState();
+		const state = this.#loadState() || this.getState();
 
 		// Инициализируем состояние
 		this.setState(state);
@@ -155,7 +155,7 @@ class TicTacToe extends XOEngine {
 
 	// Обработчик хода
 	#moveHandler(cell, player) {
-		$.cols[cell].dataset.symbol = side ? player === 1 ? "X" : "O" : player === 1 ? "O" : "X";
+		$.cols[cell].dataset.symbol = this.getState().side ? player === 1 ? "X" : "O" : player === 1 ? "O" : "X";
 	}
 
 	// Визуальное изменение счетчика ходов
